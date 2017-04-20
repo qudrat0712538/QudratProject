@@ -7,7 +7,7 @@ $link=mysqli_connect('MYSQLCONNSTR_localdb','root','','studentportal');
 //$link = mysqli_connect('localhost','root','');
 
 if (!$link) {
-    die('Could not connect: ' . mysqli_error());
+    die('Could not connect1: ' . mysqli_error());
 }
 //mysqli_select_db("studentportal",$link) or die('could not able to connect db');
 
