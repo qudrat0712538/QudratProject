@@ -1,5 +1,5 @@
 <?php
-require('dbcon.php');
+require('dbConnect.php');
 
 if(isset($_GET['iD'])){
     session_destroy();

@@ -1,5 +1,5 @@
 <?php
-    require 'dbcon.php';
+    require 'dbConnect.php';
         $query = mysqli_query($link, "Select * from tblexperiment where Eid=9");
         mysqli_close($link);
         echo $rr = mysqli_num_rows($query);

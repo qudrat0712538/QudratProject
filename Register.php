@@ -1,5 +1,5 @@
 <?php
-require 'dbcon.php';
+require 'dbConnect.php';
 
 $qry=mysqli_query($link,"select * from tbluserrole");
  echo $num=mysqli_num_rows($qry);

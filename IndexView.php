@@ -1,5 +1,5 @@
 <?php
-require('dbcon.php');
+require('dbConnect.php');
 session_start();
 if(!isset($_SESSION['UID'])){
     header("Location:Login.php");

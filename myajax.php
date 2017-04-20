@@ -1,5 +1,5 @@
 <?php
-require('dbcon.php');
+require('dbConnect.php');
 
 if(isset($_GET['Eid'])){
     $id=$_GET['Eid'];
