@@ -14,7 +14,7 @@ if(isset($_POST["btnRegister"])){
   echo  $role=$_POST['role'];
 
     //$query=mysqli_query($link,"Insert into tblregister (FirstName,LastName,Email,Password,Gender,PhoneNo,RoleId) values ('$fname','$lname','$email','$pwd','$gender','$phone','$role')");
-    $query=mysqli_query($link, "Insert into tblregister (FirstName,LastName,Email,Password,Gender,PhoneNo,RoleId) values ('$fname','$lname','$email','$pwd','$gender','$phone','$role')\"); values ('$fname','$lname','$email','$pwd','$gender','$phone','$role')");
+    $query=mysqli_query($link, "Insert into tblregister (FirstName,LastName,Email,Password,Gender,PhoneNo,RoleId) values ('$fname','$lname','$email','$pwd','$gender','$phone','$role')");
     mysqli_close($link);
 
     echo '<script language="javascript">';
