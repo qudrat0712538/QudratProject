@@ -5,7 +5,7 @@ $qry=mysqli_query($link,"select * from tbluserrole");
  echo $num=mysqli_num_rows($qry);
 
 if(isset($_POST["btnRegister"])){
-    $fname=$_POST['fname'];
+   echo $fname=$_POST['fname'];
     $lname=$_POST['lname'];
     $email=$_POST['email'];
     $pwd=$_POST['pwd'];
@@ -13,14 +13,14 @@ if(isset($_POST["btnRegister"])){
     $phone=$_POST['phone'];
     $role=$_POST['role'];
 
-    $query=mysqli_query($link,"Insert into tblregister (FirstName,LastName,Email,Password,Gender,PhoneNo,RoleId) values ('$fname','$lname','$email','$pwd','$gender','$phone','$role')");
+    $query=mysqli_query($link,"Insert into MYSQLCONNSTR_localdb.tblregister (FirstName,LastName,Email,Password,Gender,PhoneNo,RoleId) values ('$fname','$lname','$email','$pwd','$gender','$phone','$role')");
     mysqli_close($link);
 
     echo '<script language="javascript">';
     echo 'alert("Registered Successfully.")';
     echo '</script>';
 
-    header("Location:Login.php");
+  //  header("Location:Login.php");
 }
 
 ?>
