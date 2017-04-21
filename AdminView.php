@@ -15,7 +15,7 @@ $fetchqry1=mysqli_fetch_assoc($qry1);
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Index</title>
+    <title>Administrator</title>
     <link href="https://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="Css/styles.css">
@@ -35,7 +35,7 @@ $fetchqry1=mysqli_fetch_assoc($qry1);
             <div class="col-md-5">
                 <!-- Logo -->
                 <div class="logo">
-                    <h1><a href="index.html">Assignment Portal</a></h1>
+                    <h1><a href="index.html">RGU Assignment Portal</a></h1>
                 </div>
             </div>
             <div class="col-md-5">
