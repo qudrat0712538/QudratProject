@@ -2,27 +2,26 @@
 require 'dbConnect.php';
 
 $qry=mysqli_query($link,"select * from tbluserrole");
- echo $num=mysqli_num_rows($qry);
+ $num=mysqli_num_rows($qry);
 
 if(isset($_POST["btnRegister"])){
-   echo $fname=$_POST['fname'];
- echo  $lname=$_POST['lname'];
-  echo  $email=$_POST['email'];
-   echo $pwd=$_POST['pwd'];
-  echo  $gender=$_POST['optradio'];
-  echo  $phone=$_POST['phone'];
-  echo  $role=$_POST['role'];
+   $fname=$_POST['fname'];
+  $lname=$_POST['lname'];
+   $email=$_POST['email'];
+   $pwd=$_POST['pwd'];
+    $gender=$_POST['optradio'];
+    $phone=$_POST['phone'];
+  $role=$_POST['role'];
 
-    //$query=mysqli_query($link,"Insert into tblregister (FirstName,LastName,Email,Password,Gender,PhoneNo,RoleId) values ('$fname','$lname','$email','$pwd','$gender','$phone','$role')");
+
     $query=mysqli_query($link, "Insert into tblregister (FirstName,LastName,Email,Password,Gender,PhoneNo,RoleId) values ('$fname','$lname','$email','$pwd','$gender','$phone','$role')");
-    echo($query);
     mysqli_close($link);
 
     echo '<script language="javascript">';
     echo 'alert("Registered Successfully.")';
     echo '</script>';
 
-  //  header("Location:Login.php");
+    header("Location:Login.php");
 }
 
 ?>
