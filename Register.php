@@ -6,14 +6,14 @@ $qry=mysqli_query($link,"select * from tbluserrole");
 
 if(isset($_POST["btnRegister"])){
    echo $fname=$_POST['fname'];
-    $lname=$_POST['lname'];
-    $email=$_POST['email'];
-    $pwd=$_POST['pwd'];
-    $gender=$_POST['optradio'];
-    $phone=$_POST['phone'];
-    $role=$_POST['role'];
+ echo  $lname=$_POST['lname'];
+  echo  $email=$_POST['email'];
+   echo $pwd=$_POST['pwd'];
+  echo  $gender=$_POST['optradio'];
+  echo  $phone=$_POST['phone'];
+  echo  $role=$_POST['role'];
 
-    $query=mysqli_query($link,"Insert into MYSQLCONNSTR_localdb.tblregister (FirstName,LastName,Email,Password,Gender,PhoneNo,RoleId) values ('$fname','$lname','$email','$pwd','$gender','$phone','$role')");
+    $query=mysqli_query($link,"Insert into tblregister (FirstName,LastName,Email,Password,Gender,PhoneNo,RoleId) values ('$fname','$lname','$email','$pwd','$gender','$phone','$role')");
     mysqli_close($link);
 
     echo '<script language="javascript">';
