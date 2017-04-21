@@ -20,7 +20,7 @@ if(isset($_POST["btnsubmit"])) {
     $filetype = mysqli_real_escape_string($link, $_FILES['files']['type']);
     $filesize=mysqli_real_escape_string($link,$_FILES['files']['size']);
 
-    $query = mysqli_query($link, "Insert into tblexperiment (ExpTitle,ExpDate,ExpFile,Status,ExpFileName,ExpFileType,ExpFileSize,UserId) values ('$title','$date','$fileData','$status','$filename','$filetype','$filesize','$userid')");
+    $query = mysqli_query($link, "Insert into tblexperiment (ExpTitle,ExpDate,ExpFile,Status,ExpFileName,ExpFileSize,UserId) values ('$title','$date','$fileData','$status','$filename','$filesize','$userid')");
 
     $exidQry=mysqli_query($link,"Select EId from `tblexperiment` ORDER by EId DESC ");
     $ftch=mysqli_fetch_assoc($exidQry);

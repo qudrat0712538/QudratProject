@@ -113,12 +113,7 @@ if(isset($_POST["btnedit"])) {
                                             <input type="file" name="files"  class="form-control btn btn-default" ></input>
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2 control-label">Assignment Status</label>
-                                        <div class="col-sm-10">
-                                            <span class="form-control">Not Assigned</span>
-                                        </div>
-                                    </div>
+
                                     <div class="form-group">
                                         <div class="col-sm-offset-2 col-sm-10">
                                             <input type="submit" name="btnedit"  value="submit" class="btn btn-primary"/>
